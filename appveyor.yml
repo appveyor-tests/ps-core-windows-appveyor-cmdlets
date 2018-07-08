@@ -1,4 +1,5 @@
 build: off
 
 test_script:
+- ps: Push-AppVeyorArtifact test.ps1
 - pwsh: .\test.ps1
