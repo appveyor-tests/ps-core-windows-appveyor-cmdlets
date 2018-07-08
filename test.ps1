@@ -7,6 +7,6 @@ Add-AppveyorTest -Name "PowerShell Core" -Framework NUnit -Filename pwsh.exe -Ou
   }
   catch [Exception]
   {
-    echo $_.Exception.GetType().FullName, $_.Exception.Message
+    echo $_.Exception.GetType().FullName, $_.Exception.ToString()
   }
 
